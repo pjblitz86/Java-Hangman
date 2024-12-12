@@ -1,0 +1,44 @@
+Užduoties tikslas
+Sukurti konsolinį žaidimą „Kartuvės“. Žaidimo tikslas – atspėti užslėptą žodį spėjant raides. Žaidėjas laimi, jei per tam tikrą bandymų skaičių teisingai atspėja visą žodį. Pralaimėjimo atveju programa parodo teisingą žodį.
+ 
+Reikalavimai
+Žaidimo pradžia:
+Programa turi turėti iš anksto apibrėžtą žodžių sąrašą, iš kurio atsitiktinai parenkamas žodis.
+Užslėptas žodis žaidėjui turi būti rodomas su pabraukimais (_), kurie simbolizuoja neatspėtas raides.
+Žaidimo eiga:
+Žaidimas turi rodyti:
+Dabartinę žodžio būseną (pvz., _ _ _ _ _).
+Anksčiau spėtas raides.
+Likusių bandymų skaičių.
+Žaidėjas turi įvesti vieną raidę vienu metu.
+Jei raidė yra žodyje, ji pakeičia atitinkamus pabraukimus.
+Jei raidė nėra žodyje, bandymų skaičius sumažėja vienu.
+Laimėjimo / pralaimėjimo sąlygos:
+Žaidėjas laimi, jei teisingai atspėja visas žodžio raides.
+Žaidėjas pralaimi, jei bandymų skaičius pasiekia nulį. Tuomet programa turi parodyti teisingą žodį.
+Žaidimo funkcionalumas:
+Įvesties validacija:
+Tikrinti, kad žaidėjas įvestų tik vieną raidę.
+Nepriimti netinkamų simbolių (pvz., skaičių, ženklų).
+Didžiųjų ir mažųjų raidžių ignoravimas:
+Raidės „A“ ir „a“ turi būti traktuojamos vienodai.
+Pasikartojančių spėjimų tikrinimas:
+Jei žaidėjas pakartoja jau spėtą raidę, programa turi apie tai pranešti.
+
+Papildomai: Žodžių ir rezultatų klases pateiksiu žemiau
+ 
+Užduoties detalės
+Klasių struktūra:
+Main: Pagrindinė klasė, paleidžianti žaidimą.
+Game: Atsakinga už žaidimo logiką (žodžio parinkimas, būsenos atnaujinimas, spėjimų tikrinimas).
+UI: Spausdina kartuvių paveiksliuką (pateiksiu)
+WordList: Saugo galimų žodžių sąrašą. (pateiksiu)
+Utils: Pagalbiniai metodai (pvz., įvesties validacija).
+Pagrindiniai metodai (anglų kalba):
+startGame(): Paleidžia žaidimą.
+initializeWord(): Pasirenka atsitiktinį žodį iš sąrašo.
+checkGuess(char guess): Patikrina, ar raidė yra žodyje.
+updateState(char guess): Atnaujina žaidimo būseną (parodo atspėtas raides, sumažina bandymus).
+isGameWon(): Patikrina, ar žaidėjas laimėjo.
+isGameOver(): Patikrina, ar žaidėjas pralaimėjo.
+ 
